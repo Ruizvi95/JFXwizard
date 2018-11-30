@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controlador">
+   <children>
+      <AnchorPane fx:id="pane1" layoutX="133.0" layoutY="200.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #0090e4;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="179.0" layoutY="77.0" text="Slide 1 title" textFill="WHITE">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="160.0" layoutY="108.0" prefHeight="68.0" prefWidth="179.0" text="Descripicioooooooooooooooooooooooooooooooooooooooooon" textAlignment="JUSTIFY" textFill="WHITE" wrapText="true" />
+            <Pane layoutX="166.0" layoutY="204.0" prefHeight="193.0" prefWidth="168.0" styleClass="image1" stylesheets="@application.css" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pane2" layoutX="143.0" layoutY="210.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: green;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="179.0" layoutY="77.0" text="Slide 2 title" textFill="WHITE">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="160.0" layoutY="108.0" prefHeight="68.0" prefWidth="179.0" text="Descripicioooooooooooooooooooooooooooooooooooooooooon" textAlignment="JUSTIFY" textFill="WHITE" wrapText="true" />
+            <Pane layoutX="166.0" layoutY="204.0" prefHeight="193.0" prefWidth="168.0" styleClass="image2" stylesheets="@application.css" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pane3" layoutX="143.0" layoutY="210.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: red;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane layoutX="166.0" layoutY="204.0" prefHeight="193.0" prefWidth="168.0" styleClass="image3" stylesheets="@application.css" />
+            <Label layoutX="179.0" layoutY="77.0" text="Slide 3 title" textFill="WHITE">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="160.0" layoutY="108.0" prefHeight="68.0" prefWidth="179.0" text="Descripicioooooooooooooooooooooooooooooooooooooooooon" textAlignment="JUSTIFY" textFill="WHITE" wrapText="true" />
+         </children>
+      </AnchorPane>
+      <JFXButton ellipsisString="" layoutX="382.0" layoutY="508.0" onAction="#nextAction" prefHeight="50.0" prefWidth="26.0" style="-fx-background-color: #00000020; -fx-background-radius: 50px;" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="48.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@right-arrow.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton ellipsisString="" layoutX="43.0" layoutY="508.0" onAction="#backAction" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #00000020; -fx-background-radius: 50px;" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@left-arrow.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Label fx:id="countLabel" alignment="CENTER" layoutX="104.0" layoutY="525.0" prefHeight="17.0" prefWidth="269.0" text="1/3" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
